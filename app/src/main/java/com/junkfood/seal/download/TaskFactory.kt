@@ -59,7 +59,7 @@ object TaskFactory {
                         splitByChapter = splitByChapter,
                         newTitle = newTitle,
                         mergeAudioStream = mergeAudioStream,
-                        extractAudio = extractAudio || audioOnly,
+                        extractAudio = audioOnly,
                         mergeToMkv = shouldUseMp4,
                     )
                 }
