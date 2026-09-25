@@ -1257,11 +1257,7 @@ object DownloadUtil {
                         addOption("--concurrent-fragments", concurrentFragments)
                     }
 
-                    val isAudioDownload = if (formatIdString.isNotEmpty()) {
-                        extractAudio
-                    } else {
-                        extractAudio || (videoInfo.vcodec == "none")
-                    }
+                    val isAudioDownload = extractAudio
 
                     if (isAudioDownload) {
                         if (privateDirectory) pathBuilder.append(App.privateDownloadDir)
